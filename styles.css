@@ -21,6 +21,7 @@ body {
 
 input[type=number] {
     width: 100%;
+    outline: none;
     height: 100%;
     background-color: #000;
     color: #fff;
@@ -45,4 +46,23 @@ input[type=number] {
 .fahrenheit {
     border-top: 4px solid white;
     border-bottom: 4px solid white;
+}
+
+/* Tablet */
+@media only screen
+    and (max-device-width: 1000px)
+    and (min-device-width: 570px)
+    and (-webkit-min-device-pixel-ratio: 1) {
+        input[type=number] {
+            font-size: 7rem;
+    }
+}
+
+/* Phones */
+@media only screen
+    and (max-device-width: 569px)
+    and (-webkit-min-device-pixel-ratio: 2) {
+        input[type=number] {
+            font-size: 3rem;
+    }
 }
